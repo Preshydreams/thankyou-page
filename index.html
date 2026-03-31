@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Successful</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1591355921942076');
+  fbq('track', 'PageView');
+
+  fbq('track', 'Purchase', {
+    value: 5000,
+    currency: 'NGN'
+  });
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 50px;
+    }
+
+    .box {
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    h1 {
+      color: #22c55e;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      background: #16a34a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>🎉 Payment Successful!</h1>
+    <p>Your purchase was successful.</p>
+    <p>Click the button below to access your book:</p>
+
+    <!-- 🔴 CHANGE THIS LINK -->
+    <a class="button" href="https://your-book-link.com" target="_blank">
+      Download Your Book
+    </a>
+  </div>
+
+</body>
+</html>
